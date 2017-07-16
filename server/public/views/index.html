@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="../vendors/angular.js"></script>
-    <script type="text/javascript" src="../scripts/client.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title></title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="views/styles.css">
 
+  <script type="text/javascript" src="../vendors/angular.js"></script>
+  <script type="text/javascript" src="../scripts/photodata.js"></script>
+  <script type="text/javascript" src="../scripts/client.js"></script>
 
+  <title>Photo Gallery</title>
+</head>
+<body ng-app= "photoGallery">
+  <div class="container" ng-controller="PhotoController as gallery">
+    <h1>Kuplic Memorial Day Road Trip</h1>
+        <div class="col-md-4" ng-repeat="image in gallery.images">
+<img ng-show="image.visible" ng-src="{{image.url}}" alt="kuplic family road trip">
+        </div>
+      </div>
 
-
-
-  </body>
+</body>
 </html>

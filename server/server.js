@@ -1,13 +1,18 @@
 var express = require("express");
 var app = express();
 var bodyParser = require('body-parser');
-var port = process.env.PORT || 5080;
+var port = process.env.PORT || 5025;
 var path = require('path');
-
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-// Start listening for requests on a specific port
+app.use(express.static('server/public'));
+
+app.get('/*', function (req, res) {
+  var file = req.params[0] || 'views/index.html';
+  res.sendFile(path.join(__dirname, '/public', file));
+});
+
 app.listen(port, function(){
-  console.log('listening on port', port);
+  console.log("Listening on port: ", port);
 });
