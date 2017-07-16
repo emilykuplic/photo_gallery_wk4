@@ -1,0 +1,24 @@
+{
+  "name": "photo_gallery_wk4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilykuplic/photo_gallery_wk4.git"
+  },
+  "author": "Emily Kuplic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilykuplic/photo_gallery_wk4/issues"
+  },
+  "homepage": "https://github.com/emilykuplic/photo_gallery_wk4#readme",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
