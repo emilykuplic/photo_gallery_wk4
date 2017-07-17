@@ -18,9 +18,12 @@
   <div class="container" ng-controller="PhotoController as gallery">
     <h1>Kuplic Memorial Day Road Trip</h1>
         <div class="col-md-4" ng-repeat="image in gallery.images">
-<img ng-show="image.visible" ng-src="{{image.url}}" alt="kuplic family road trip">
+          <div class="images"
+          <div class="image" ng-click="gallery.toggle(image)">
+<img ng-show="image.visible" ng-src="{{image.image}}" alt="kuplic family road trip">
         </div>
       </div>
-
+    </div>
+</div>
 </body>
 </html>
