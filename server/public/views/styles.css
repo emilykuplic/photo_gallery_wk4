@@ -1,6 +1,28 @@
+
+body {
+  background-color: #D6F4F7
+}
 h1 {
-  color: blue;
+  color: #02103F;
+  text-align: center;
 }
 img {
-  max-width: 200px;
+  max-width: 300px;
+}
+
+.description {
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  background-color: #02103F;
+  color: #D6F4F7;
+  padding: 15px;
+}
+.images {
+
+  color: #02103F;
+  position: relative;
+  float: left;
+  padding-bottom: 10px;
+
 }
