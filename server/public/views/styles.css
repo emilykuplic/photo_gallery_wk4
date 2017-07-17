@@ -5,24 +5,27 @@ body {
 h1 {
   color: #02103F;
   text-align: center;
+  padding: 25px;
+  font-size: 54px;
+  font-family: 'Luckiest Guy', cursive;
 }
-img {
-  max-width: 300px;
+img-responsive {
+  width: 100%;
+  height: auto;
 }
 
 .description {
+  border-radius: 5px;
   text-align: center;
-  height: 400px;
-  width: 300px;
-  background-color: #02103F;
   color: #D6F4F7;
   padding: 15px;
+  background-color: #02103F;
+  width: 100%;
 }
 .images {
-
   color: #02103F;
-  position: relative;
-  float: left;
-  padding-bottom: 10px;
-
+  padding-bottom: 5px;
+}
+.counter{
+  padding-bottom: 15px;
 }

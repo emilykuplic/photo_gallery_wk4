@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap-theme.css">
   <link rel="stylesheet" href="views/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
 
   <script type="text/javascript" src="../vendors/angular.js"></script>
   <script type="text/javascript" src="../scripts/photodata.js"></script>
@@ -16,25 +17,21 @@
 </head>
 <body ng-app= "photoGallery">
   <div class="container" ng-controller="PhotoController as gallery">
-    <h1>Kuplic Memorial Day Road Trip</h1>
+    <h1>Kuplic Family Black Hills Hike 2017</h1>
     <!--Images-->
     <div class="col-md-4" ng-repeat="image in gallery.images">
       <div class="images"
-      <div class="image" "img-responsive" ng-click="gallery.toggle(image)">
-        <img ng-show="image.visible" ng-src="{{image.image}}" alt="kuplic family road trip">
+      <div class="image" ng-click="gallery.toggle(image)">
+        <img class="img-responsive img-rounded" ng-show="image.visible" ng-src="{{image.image}}" alt="kuplic family road trip">
         <!--Image Description-->
         <div class="description" ng-show="!image.visible" ng-click="galler.toggle(image)">
           <h3>{{image.description}}</h3>
         </div>
-        <!--Favorite Button with counter-->
-        <div class="counter">
-          <button type="button" class="btn btn-warning btn-block" ng-click="count =count + 1"><span class="glyphicon glyphicon-star" aria-hidden="true">
-          </span>Favorite {{count}}</button>
-        </div>
       </div>
-
+      <!--Favorite Button with counter-->
       <div class="counter">
-
+        <button type="button" class="btn btn-warning btn-block" ng-click="count =count + 1"><span class="glyphicon glyphicon-star" aria-hidden="true">
+        </span> Favorite {{count}}</button>
       </div>
     </div>
   </div>

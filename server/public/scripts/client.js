@@ -14,7 +14,7 @@ gallery.toggle = function(image){
     // ! sets it equal to the opposite of what it was
     image.visible = !image.visible;
     console.log(image.visible);
-
+    // Trying to figure out the image view counter
     if (image.visable=== true){
       image.count = image.count +=1;
       console.log('Image count:', image.count);
